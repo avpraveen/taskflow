@@ -1,0 +1,23 @@
+/* Global styles for TaskFlow */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure the root div takes full height */
+#root {
+  min-height: 100vh;
+}
+
+/* Custom styles for drag-and-drop feedback */
+.card.cursor-move:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+/* Ensure modal backdrop doesn't interfere with drag-and-drop */
+.modal.show {
+  z-index: 1050;
+}
